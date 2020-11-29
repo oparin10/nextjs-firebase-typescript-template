@@ -4,7 +4,7 @@ interface Props {
   text: string;
 }
 
-const TextField: React.FC<Props> = (props) => {
+const TextField: React.FC<Props> = () => {
   const [text, setText] = React.useState<string | null>(null);
 
   React.useEffect(() => {
@@ -15,4 +15,3 @@ const TextField: React.FC<Props> = (props) => {
 };
 
 export default TextField;
-
